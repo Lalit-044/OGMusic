@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+form{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+input{
+    padding: 4px;
+}
+label{
+    padding: 10px;
+}
+
+.btn{
+    background-color: blueviolet;
+    margin-left: 50%;
+}
+
+.btn:hover{
+    align-items: center;
+    background-color: aquamarine;
+}

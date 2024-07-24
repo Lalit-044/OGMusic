@@ -1,0 +1,104 @@
+/* .wrapper {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+} */
+
+button{
+  margin: 10px 10px;
+}
+/* Style the outer div */
+.song-manage {
+    margin: 20px auto; /* Add some margin for spacing */
+    padding: 15px;
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #f5f5f5; /* Add a light background color */
+  }
+  
+  /* Style the heading */
+  .song-manage h1 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 15px; /* Add some space after the heading */
+  }
+  
+  /* Style the song table */
+  .song-table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Remove borders between cells */
+  }
+  
+  /* Style the table header */
+  .song-table thead th {
+    padding: 10px;
+    text-align: left; /* Left align the table header content */
+    background-color: #eee; /* Add a light background color for the header */
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the table body */
+  .song-table tbody tr {
+    border-top: 1px solid #ddd; /* Add a border on top of each row */
+  }
+  
+  /* Style the table cells */
+  .song-table tbody td {
+    padding: 10px;
+  }
+  
+  /* Style the buttons */
+  .song-table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style the green button */
+  .song-table button.green {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+  }
+  
+  /* Style the red button */
+  .song-table button.red {
+    background-color: #f44336; /* Red color */
+    color: white;
+  }
+  
+  /* Style the button hover effect (optional) */
+  .song-table button:hover {
+    opacity: 0.8; /* Make the button slightly transparent on hover */
+  }
+  

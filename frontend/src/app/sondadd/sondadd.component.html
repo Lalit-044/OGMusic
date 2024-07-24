@@ -1,0 +1,51 @@
+<!-- <p>sondadd works!</p> -->
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Song</title>
+    <link rel="stylesheet" href="sondadd.component.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <br><br>
+    <h1>Add Song</h1><br><br>
+    <div class="wrapper">
+      <form [formGroup]="sondaddForm" id="sondadd-form" (ngSubmit)="songadddet()">
+        <div class="field">
+          <label>Enter Title</label>
+          <input
+            type="text"
+            required
+            id="title"
+            name="title"
+            formControlName="title"
+          />
+        </div>
+        <div class="field">
+          <label>Enter Artist</label>
+          <input
+            type="text"
+            required
+            id="description"
+            name="description"
+            formControlName="description"
+          />
+        </div>
+
+        <!-- <div class="field">
+                <label>Select song</label>
+                <input type="file" required id="song" name="song" formControlName="song" (change)="selectPdf($event)">
+                
+             </div> -->
+        <div class="field">
+          <input type="submit" value="Add" />
+        </div>
+      </form>
+      <button (click)="navigateTo('/adminhome')"><i class='fa fa-sign-out'></i>Back to Home</button>
+
+    </div>
+  </body>
+</html>

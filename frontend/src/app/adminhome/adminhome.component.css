@@ -1,0 +1,71 @@
+body{
+  /* background-image: url(../../assets/musicbg.jfif); */
+  background: radial-gradient(rgb(157, 245, 157),rgb(137, 242, 184));
+}
+
+.admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.admin-sidebar {
+  margin-left: 2cm;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.admin-sidebar-item {
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.admin-btn {
+  /* width: 100%; */
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.admin-btn:hover {
+  background-color: #0056b3;
+}
+
+.admin-title {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.admin-content {
+  width: 100%;
+  /* Add your content styling here */
+}
+
+h1{
+  text-align: center;
+}

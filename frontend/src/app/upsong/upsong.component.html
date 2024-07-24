@@ -1,0 +1,53 @@
+<!-- <div class="wrapper">
+    <form [formGroup]="upsongForm" id="upsong-form" (ngSubmit)="songupdatedet()">
+      <div class="field">
+        <label>Enter Title</label>
+        <input
+          type="text"
+          required
+          id="title"
+          name="title"
+          formControlName="title"
+        />
+      </div>
+      <div class="field">
+        <label>Artist</label>
+        <input
+          type="text"
+          required
+          id="description"
+          name="description"
+          formControlName="description"
+        />
+      </div>
+      <div class="field">
+        <input type="submit" value="Update" />
+      </div>
+    </form>
+  </div> -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <button (click)="navigateTo('/adminhome')"><i class='fa fa-sign-out'></i>Back to Home</button>
+  <div class="song-manage">
+    <h1>Update Song</h1>
+    
+    <table class="song-table">
+        <thead>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Action</th>
+          </thead>
+        <tbody>
+          <tr *ngFor="let song of Songs;let i = index;">
+            <td>{{song.title}}  </td>
+            <td>{{song.description}}</td>
+            <!-- <td><button class="green" *ngIf="Songs?.length" (click)="edit(Songs[i])">Edit</button> -->
+              <!-- <td><button class="green" *ngIf="Songs?.length" (click)="updateSong(Songs[i])">Edit</button> -->
+            <td><button class="red" *ngIf="Songs?.length" (click)="delete(Songs[i])">Delete</button></td>
+
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+

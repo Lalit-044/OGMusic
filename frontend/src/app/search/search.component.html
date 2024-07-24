@@ -1,0 +1,33 @@
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<button (click)="navigateTo('/home')"><i class='fa fa-sign-out'></i>Back to Home</button>
+
+<p>Search Songs</p>
+
+<!-- <input type="text" [(ngModel)]="searchTerm" (input)="searchSongs(searchTerm)" placeholder="Search by song title">
+<div *ngFor="let song of filteredSongs">
+    <p>{{ song.title }}</p>
+  </div> -->
+<label for="Enter Song to Search for : ">Enter Song to Search for :</label>
+<input type="text" placeholder="Search for a song..." [(ngModel)]="searchTerm" (input)="search()">
+<!-- <ul>
+  <li *ngFor="let song of songs">
+    <strong>{{ song.title }}</strong> - {{ song.description }}
+  </li>
+</ul> -->
+<br><br>
+<table class="song-table">
+  <thead>
+    <th>Title</th>
+    <th>Artist</th>
+    </thead>
+  <tbody>
+    <tr *ngFor="let song of songs">
+      <td>{{song.title}}  </td>
+      <td>{{song.description}}</td>
+      </tr>
+  </tbody>
+</table>
+
+
+

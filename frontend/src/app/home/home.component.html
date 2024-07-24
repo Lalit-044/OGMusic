@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="home.component.css">
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <!-- <div class="spotify-sidebar"> -->
+                <!-- <i class="fas fa-house"></i> -->
+                <div class="item">
+                    <!-- <i class='fas fa-home'></i> -->
+                    <button (click)="navigateTo('/home')"><i class='fa fa-home'></i>  Home</button>
+                </div>
+                <div class="item">
+                    <button (click)="navigateTo('/search')"><i class='fa fa-search'></i>  Search</button>
+                </div>
+                <!-- <div class="item">
+                    <button><i class='fa fa-heart'></i>  Favourites</button>
+                </div> -->
+                <div class="item">
+                    <button (click)="navigateTo('/up')"><i class='fa fa-user'></i>  Profile</button>
+                </div>
+                <div class="item">
+                    <button (click)="navigateTo('/contact')"><i class='fa fa-user'></i>  Contact</button>
+                </div>
+                <div class="item">
+                    <!-- <button id="logoutButton" (click)="navigateTo1('/login')"><i class='fa fa-sign-out'></i>  Logout</button> -->
+                    <button id="logoutButton" (click)="logout()"><i class='fa fa-sign-out'></i>  Logout</button>
+                </div>
+            <!-- </div> -->
+            
+        </div>
+        
+    </div>
+    <div class="spotify-content">
+        <!-- Main content goes here -->
+        <!-- <app-sondadd></app-sondadd> -->
+        <app-display-song></app-display-song>
+    </div>
+
+    <script>
+        document.getElementById("logoutButton").addEventListener("click", function() {
+            // Redirect to the login page
+            window.location.href = "/login";
+        });
+    </script>
+</body>
+</html>

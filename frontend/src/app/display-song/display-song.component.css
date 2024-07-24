@@ -1,0 +1,116 @@
+.top{
+  background: radial-gradient(rgb(157, 245, 157),rgb(137, 242, 184));
+
+}
+
+.songcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .song-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative; /* Add position relative */
+    
+    text-align: center;
+  }
+  
+  .song-card img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .song-details {
+    flex: 1;
+  }
+  
+  .song-details h3 {
+    margin: 0;
+  }
+  
+  .song-details p {
+    margin: 5px 0;
+  }
+  
+  audio {
+    width: calc(100% - 20px); /* Make the audio player full width of card */
+    position: absolute; /* Position audio player absolutely */
+    bottom: 10px; /* Adjust position from bottom as needed */
+    left: 10px; /* Adjust position from left as needed */
+    right: 10px; /* Adjust position from right as needed */
+    
+  }
+
+  /* Style the outer div */
+.song-manage {
+    margin: 20px auto; /* Add some margin for spacing */
+    padding: 15px;
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #f5f5f5; /* Add a light background color */
+  }
+  
+  /* Style the heading */
+  .song-manage h1 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 15px; /* Add some space after the heading */
+  }
+  
+  /* Style the song table */
+  .song-table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Remove borders between cells */
+  }
+  
+  /* Style the table header */
+  .song-table thead th {
+    padding: 10px;
+    text-align: left; /* Left align the table header content */
+    background-color: #eee; /* Add a light background color for the header */
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the table body */
+  .song-table tbody tr {
+    border-top: 1px solid #ddd; /* Add a border on top of each row */
+  }
+  
+  /* Style the table cells */
+  .song-table tbody td {
+    padding: 10px;
+  }
+  
+  /* Style the buttons */
+  .song-table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style the green button */
+  .song-table button.green {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+  }
+  .song-table button.red {
+    background-color: #f61313; /* Green color */
+    color: white;
+  }
+  
+  /* Style the red button */
+ 
+  
+  /* Style the button hover effect (optional) */
+  .song-table button:hover {
+    opacity: 0.8; /* Make the button slightly transparent on hover */
+  }
+  
+  

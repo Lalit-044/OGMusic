@@ -1,0 +1,39 @@
+<h1>ADMIN</h1>
+
+<h1 class="admin-title">OG MUSICS</h1>
+<div class="admin">
+    <!-- <p>home works!</p> -->
+    <div class="admin-sidebar">
+        <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/adminhome')"><a>Home</a></button>
+        </div>
+        <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/search')"><a>Search</a></button>
+        </div>
+        <!-- <div class="admin-sidebar-item">
+            <button class="admin-btn"><a>Create Playlist</a></button>
+        </div> -->
+        <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/sondadd')"><a>AddSongs</a></button>
+        </div>
+        <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/upsong')"><a>UpdateSongs</a></button>
+        </div>
+        <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/up')"><a>Profile</a></button>
+        </div>
+        <!-- <div class="admin-sidebar-item">
+            <button class="admin-btn" (click)="navigateTo1('/contact')"><a>Contact</a></button>
+        </div> -->
+        <div class="admin-sidebar-item">
+            <!-- <button class="admin-btn" (click)="navigateTo('/login')"><a>Logout</a></button> -->
+            <button class="admin-btn" (click)="logout()"><a>Logout</a></button>
+        </div>
+    </div><br>
+    
+    
+</div>
+<div class="admin-content">
+    <!-- <app-song-card [title]="'Peaceful Piano'" [description]="'Relax and indulge with'"></app-song-card> -->
+    <app-display-song></app-display-song>
+</div>

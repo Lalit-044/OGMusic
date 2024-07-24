@@ -1,0 +1,98 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #73cff6;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 40px;
+  margin: 80px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bolder;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.field input:focus {
+  border-color: #007bff;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.pass-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pass-link a:hover {
+  text-decoration: underline;
+}
+
+.field input[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: xx-large;
+}

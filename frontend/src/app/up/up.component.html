@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Update Form Design | CodeLab</title>
+      <link rel="stylesheet" href="up.component.css">
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+
+   
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Update User Details
+         </div>
+         <form [formGroup]="updateForm" id="update-form" (ngSubmit)="update()">
+            <div class="field">
+               <label for="username">Username</label>
+               <input type="text" id="username" formControlName="username" placeholder="Enter your new username">
+            </div>
+            <div class="field">
+               <label for="email">Email</label>
+               <input type="email" id="email" formControlName="email" [disabled]='true'  placeholder="Enter your new email">
+            </div>
+            <div class="field">
+               <label for="password">Password</label>
+               <input type="password" id="password" formControlName="password" placeholder="Enter your new password">
+            </div>
+            <div class="field">
+               <input type="submit" value="Update">
+            </div>
+         </form>
+         <button (click)="navigateTo('/home')"><i class='fa fa-sign-out'></i>Back to Home</button>
+      </div>
+   </body>
+
+</html>

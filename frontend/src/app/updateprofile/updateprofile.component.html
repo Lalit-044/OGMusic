@@ -1,0 +1,33 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form  #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+                <h1>Edit User details</h1>
+                <input type="text" #username="ngModel" id="username" name="username" value="user.username" [(ngModel)]="user.username" placeholder="username" minlength="4" maxlength="20"pattern="^[a-zA-Z]+$" required><br>
+                <div *ngIf="!username.valid && (username.dirty || username.touched)" class="error">
+                    <div *ngIf="username.errors?.['required']">Username is required.</div>
+                    <div *ngIf="username.errors?.['minlength']">Username must be at least 4 characters long.</div>
+                    <div *ngIf="username.errors?.['maxlength']">Username cannot exceed 20 characters.</div>
+                    <div *ngIf="username.errors?.['pattern']">Only characters are allow.</div>
+                </div>
+                <input type="email" id="email" #email="ngModel" name="email" value="user.email" [(ngModel)]="user.email"  placeholder="Email" pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"required><br>
+                <div *ngIf="!email.valid && (email.dirty || email.touched)" class="error">
+                    <div *ngIf="email.errors?.['required']">email is required.</div>
+                    <div *ngIf="email.errors?.['pattern']">Enter correct email id.</div>
+                </div>
+                
+                <button type="submit" [disabled]="!contactForm.valid">Update</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
+
